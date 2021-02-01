@@ -1,0 +1,26 @@
+{
+  "name": "node-scraping-101",
+  "version": "1.0.0",
+  "description": "Basic examples of how to scrape with node using cheerio, puppeteer and playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zygisS22/node-scraping-101.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zygisS22/node-scraping-101/issues"
+  },
+  "homepage": "https://github.com/zygisS22/node-scraping-101#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "node-fetch": "^2.6.1",
+    "playwright": "^1.8.0",
+    "puppeteer": "^5.5.0"
+  }
+}
