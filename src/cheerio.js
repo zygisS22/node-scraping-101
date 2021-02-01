@@ -3,9 +3,11 @@ const cheerio = require("cheerio");
 
 async function scrapingTime() {
   const response = await fetch("https://www.amazon.es/gp/bestsellers/books");
+  // Parseamos el HTML y lo cargamos
   const text = await response.text();
   const $ = cheerio.load(text);
 
+  // Usando el $ como si fuera jquery seleccionamos los elementos que nos interesen
   $("ol > li > span > div > span").each(function (i, elm) {
     const bookTitle = $(elm).find("a div").text().trim();
     const bookAuthor = $(elm).find("> div:nth-of-type(1) span").text().trim(); // Empieza en 1 y no 0
